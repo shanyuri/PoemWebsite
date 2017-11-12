@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Debugger test</title>
+</head>
+<body>
+	Debugger test
+	<script type="text/javascript">
+		window.addEventListener('load', function () {
+			alert("ok");
+			debugger;
+			console.log(sum(1, 2));
+
+			alert("job done");
+		});
+
+		function sum(a, b) {
+			debugger;
+			return a + b;
+		}
+	</script>
+</body>
+</html>
